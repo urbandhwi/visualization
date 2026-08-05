@@ -11,7 +11,7 @@ st.title("서울시 행정동별 출동건수 지도 시각화")
 @st.cache_data
 def load_geojson():
     # 저장소에 있는 geojson 파일 경로
-    with open("seoul_dong.geojson", encoding="utf-8") as f:
+    with open("dong_emergency_count.geojson", encoding="utf-8") as f:
         return json.load(f)
 
 
