@@ -1,6 +1,4 @@
 streamlit
 plotly
 pandas
-geopandas
 starlette<0.36.0
-shapely
