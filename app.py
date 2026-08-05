@@ -121,7 +121,7 @@ fig.add_trace(
             color="royalblue"
         ),
 
-        text=fire["기관명"],
+        text=fire["서ㆍ센터명"],
 
         hovertemplate=
         "<b>%{text}</b><extra></extra>",
