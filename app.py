@@ -24,10 +24,10 @@ df = pd.DataFrame(rows)
 # ----------------------------------------------------
 # Toggle : 목동만 보기
 # ----------------------------------------------------
-only_mok = st.toggle("목X동만 보기", value=False)
+only_mok = st.toggle("목동만 보기", value=False)
 
 if only_mok:
-    df = df[df["ADM_NM"].str.contains("목", na=False)]
+    df = df[df["ADM_NM"].str.startswith("목", na=False)]
 
 # 선택된 행정동만 GeoJSON에도 반영
 selected_codes = set(df["ADM_CD"])
